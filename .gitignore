@@ -1,0 +1,15 @@
+# Elixir shizzle
+*.beam
+deps
+_build
+
+# F# / C# stuff
+.fake/
+.paket/paket.exe
+.vs/
+tools/
+build/
+packages/
+paket-files/
+TestResult.xml
+junit-results.xml
