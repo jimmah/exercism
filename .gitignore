@@ -5,7 +5,7 @@ _build
 
 # F# / C# stuff
 .fake/
-.paket/paket.exe
+**/.paket/paket.exe
 .vs/
 tools/
 build/
