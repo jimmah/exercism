@@ -13,5 +13,6 @@
         "**/paket-files": true,
         "**/packages": true,
         "**/TestResult.xml": true
-    }
+    },
+    "go.gopath": "."
 }
