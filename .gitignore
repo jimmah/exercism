@@ -4,12 +4,7 @@ deps
 _build
 
 # F# / C# stuff
-.fake/
-**/.paket/paket.exe
+[bB]in/
+[oO]bj/
 .vs/
-tools/
-build/
 packages/
-paket-files/
-TestResult.xml
-junit-results.xml
