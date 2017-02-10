@@ -8,3 +8,7 @@ _build
 [oO]bj/
 .vs/
 packages/
+
+# Go shizzle
+src/
+pkg/

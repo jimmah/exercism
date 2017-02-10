@@ -7,7 +7,9 @@
         "**/.DS_Store": true,
         "**/bin": true,
         "**/obj": true,
-        "**/packages": true
+        "**/packages": true,
+        "**/src": true,
+        "**/pkg": true
     },
-    "go.gopath": "."
+    "go.gopath": "C:\\Projects\\Personal\\exercism\\go\\"
 }
