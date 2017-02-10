@@ -9,14 +9,12 @@ public class HelloWorldTest
         Assert.That(HelloWorld.Hello(null), Is.EqualTo("Hello, World!"));
     }
 
-    [Ignore("Remove to run test")]
     [Test]
     public void Sample_name()
     {
         Assert.That(HelloWorld.Hello("Alice"), Is.EqualTo("Hello, Alice!"));
     }
 
-    [Ignore("Remove to run test")]
     [Test]
     public void Other_sample_name()
     {
