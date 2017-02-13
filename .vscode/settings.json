@@ -8,8 +8,10 @@
         "**/bin": true,
         "**/obj": true,
         "**/packages": true,
-        "**/src": true,
-        "**/pkg": true
+        "**/go/src": true,
+        "**/pkg": true,
+        "**/project": true,
+        "**/target": true
     },
     "go.gopath": "C:\\Projects\\Personal\\exercism\\go\\"
 }

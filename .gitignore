@@ -10,5 +10,9 @@ _build
 packages/
 
 # Go shizzle
-src/
-pkg/
+go/src/
+go/pkg/
+
+# Scala Stuff
+project/
+target/
