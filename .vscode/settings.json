@@ -8,7 +8,6 @@
         "**/bin": true,
         "**/obj": true,
         "**/packages": true,
-        "**/go/src": true,
         "**/pkg": true,
         "**/project": true,
         "**/target": true
