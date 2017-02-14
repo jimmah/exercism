@@ -10,7 +10,10 @@
         "**/packages": true,
         "**/pkg": true,
         "**/project": true,
-        "**/target": true
+        "**/target": true,
+        "**/node_modules": true,
+        "**/babel-output": true
     },
-    "go.gopath": "C:\\Projects\\Personal\\exercism\\go\\"
+    "go.gopath": "C:\\Projects\\Personal\\exercism\\go\\",
+    "jshint.enable": false
 }

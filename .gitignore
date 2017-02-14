@@ -16,3 +16,7 @@ go/pkg/
 # Scala Stuff
 project/
 target/
+
+# JS Stuff
+javascript/node_modules/
+javascript/babel-output/
