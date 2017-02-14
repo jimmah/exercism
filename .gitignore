@@ -17,6 +17,6 @@ go/pkg/
 project/
 target/
 
-# JS Stuff
-javascript/node_modules/
-javascript/babel-output/
+# ES6 Stuff
+ecmascript/node_modules/
+ecmascript/babel-output/
