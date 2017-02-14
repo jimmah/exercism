@@ -1,9 +1,5 @@
 class HelloWorld {
-  hello(name) {
-    if (name === undefined || name === '') {
-      name = 'World';
-    }
-
+  hello(name = 'World') {
     return `Hello, ${name}!`;
   }
 }
