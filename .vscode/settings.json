@@ -12,7 +12,9 @@
         "**/project": true,
         "**/target": true,
         "**/node_modules": true,
-        "**/babel-output": true
+        "**/babel-output": true,
+        "**/_build": true,
+        "**/deps": true
     },
     "go.gopath": "C:\\Projects\\Personal\\exercism\\go\\"
 }
