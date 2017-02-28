@@ -8,6 +8,9 @@ _build
 [oO]bj/
 .vs/
 packages/
+fsharp/.paket/paket.exe
+fsharp/.fake/
+fsharp/TestResult.xml
 
 # Go shizzle
 go/src/
