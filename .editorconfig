@@ -8,5 +8,11 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 indent_size = 2
 
-[*.{cs}]
+[*.{cs,fs}]
 indent_size = 4
+insert_final_newline = false
+end_of_line = CRLF
+trim_trailing_whitespace = false
+
+[*.{csproj,fsproj}]
+insert_final_newline = false
