@@ -8,7 +8,7 @@ let hey(input: string) =
     let isQuestion = input.EndsWith "?"
 
     match input with
-        | _ when isSilence -> "Fine. Be that way!"
-        | _ when isShouting -> "Whoa, chill out!"
-        | _ when isQuestion -> "Sure."
-        | _ -> "Whatever."
+    | _ when isSilence -> "Fine. Be that way!"
+    | _ when isShouting -> "Whoa, chill out!"
+    | _ when isQuestion -> "Sure."
+    | _ -> "Whatever."
