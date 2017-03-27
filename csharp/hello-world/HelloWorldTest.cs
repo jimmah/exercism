@@ -1,23 +1,22 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 
-[TestFixture]
 public class HelloWorldTest
 {
-    [Test]
+    [Fact]
     public void No_name()
     {
-        Assert.That(HelloWorld.Hello(null), Is.EqualTo("Hello, World!"));
+        Assert.Equal("Hello, World!", HelloWorld.Hello(null));
     }
 
-    [Test]
+    [Fact]
     public void Sample_name()
     {
-        Assert.That(HelloWorld.Hello("Alice"), Is.EqualTo("Hello, Alice!"));
+        Assert.Equal("Hello, Alice!", HelloWorld.Hello("Alice"));
     }
 
-    [Test]
+    [Fact]
     public void Other_sample_name()
     {
-        Assert.That(HelloWorld.Hello("Bob"), Is.EqualTo("Hello, Bob!"));
+        Assert.Equal("Hello, Bob!", HelloWorld.Hello("Bob"));
     }
 }
