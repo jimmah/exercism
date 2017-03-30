@@ -12,6 +12,9 @@ fsharp/.paket/paket.exe
 fsharp/.fake/
 fsharp/TestResult.xml
 
+# Clojure bumpf
+.lein-failures
+
 # Go shizzle
 go/src/
 go/pkg/
