@@ -24,5 +24,7 @@ project/
 target/
 
 # ES6 Stuff
-ecmascript/node_modules/
 ecmascript/babel-output/
+
+# TypeScript Stuff
+node_modules/
