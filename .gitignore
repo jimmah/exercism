@@ -28,3 +28,7 @@ ecmascript/babel-output/
 
 # TypeScript Stuff
 node_modules/
+
+# Kotlin
+.gradle
+kotlin/**/build
