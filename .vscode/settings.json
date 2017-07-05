@@ -18,7 +18,8 @@
         "**/_build": true,
         "**/deps": true,
         "**/.gradle": true,
-        "kotlin/**/build": true
+        "kotlin/**/build": true,
+        "**/elm-stuff": true
     },
     "go.gopath": "C:\\Projects\\Personal\\exercism\\go\\"
 }

@@ -20,3 +20,6 @@ insert_final_newline = false
 [*.kt]
 indent_size = 4
 insert_final_newline = false
+
+[*.elm]
+indent_size = 4

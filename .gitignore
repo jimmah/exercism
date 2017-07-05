@@ -32,3 +32,6 @@ node_modules/
 # Kotlin
 .gradle
 kotlin/**/build
+
+# Elm
+elm-stuff/
