@@ -4,13 +4,12 @@ public static class ArmstrongNumbers
 {
     public static bool IsArmstrongNumber(int number)
     {
-        var numberAsString = number.ToString();
-        var digits = numberAsString.Length;
+        var digits = number.ToString().Length;
 
-        var sum = 0d;
-        for (var i = 0; i < digits; i++)
+        var sum = 0;
+        for (var i = number; i > 0; i = i / 10) 
         {
-            sum += Math.Pow(int.Parse(numberAsString[i].ToString()), digits);
+            sum = sum + (int) Math.Pow(i % 10, digits);
         }
 
         return number == sum;
