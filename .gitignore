@@ -1,3 +1,5 @@
+.exercism
+
 # Elixir shizzle
 *.beam
 deps
