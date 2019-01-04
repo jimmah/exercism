@@ -8,6 +8,7 @@ defmodule Exercism.Mixfile do
       elixir: "~> 1.3",
       deps: deps(),
       test_paths: ["."],
+      test_pattern: "**/*_test.exs",
       consolidate_protocols: false,
       dialyzer: [paths: ["tmp/build"]]
     ]
