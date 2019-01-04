@@ -9,7 +9,7 @@ defmodule Bob do
   end
 
   defp is_silence?(input) do
-    String.strip(input) == ""
+    String.trim(input) == ""
   end
 
   defp is_shouting?(input) do
