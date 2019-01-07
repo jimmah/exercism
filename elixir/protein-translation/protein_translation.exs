@@ -4,7 +4,7 @@ defmodule ProteinTranslation do
   """
   @spec of_rna(String.t()) :: {atom, list(String.t())}
   def of_rna(rna) do
-    { ok, peptides } = do_of_rna(rna, [])
+    { ok, peptides } = translate_rna(rna, [])
     cond do
       ok == :error -> { :error, "invalid RNA" }
       true -> { :ok, peptides |> Enum.reverse }
