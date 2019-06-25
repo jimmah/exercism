@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <OutputType>Exe</OutputType>
+    <LangVersion>latest</LangVersion>
+
     <generateassemblyconfigurationattribute>false</generateassemblyconfigurationattribute>
     <generateassemblydescriptionattribute>false</generateassemblydescriptionattribute>
     <generateassemblyproductattribute>false</generateassemblyproductattribute>
