@@ -4,7 +4,7 @@ Given a year, report if it is a leap year.
 
 The tricky thing here is that a leap year in the Gregorian calendar occurs:
 
-```plain
+```text
 on every year that is evenly divisible by 4
   except every year that is evenly divisible by 100
     unless the year is also evenly divisible by 400
@@ -12,9 +12,6 @@ on every year that is evenly divisible by 4
 
 For example, 1997 is not a leap year, but 1996 is.  1900 is not a leap
 year, but 2000 is.
-
-If your language provides a method in the standard library that does
-this look-up, pretend it doesn't exist and implement it yourself.
 
 ## Notes
 
@@ -28,10 +25,10 @@ phenomenon, go watch [this youtube video][video].
 
 ## Setup
 
-Go through the setup instructions for TypeScript to
-install the necessary dependencies:
+Go through the setup instructions for TypeScript to install the necessary
+dependencies:
 
-http://exercism.io/languages/typescript
+[https://exercism.io/tracks/typescript/installation](https://exercism.io/tracks/typescript/installation)
 
 ## Requirements
 
@@ -49,10 +46,16 @@ Execute the tests with:
 $ yarn test
 ```
 
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by changing `xit` to
+`it`.
+
 ## Source
 
 JavaRanch Cattle Drive, exercise 3 [http://www.javaranch.com/leap.jsp](http://www.javaranch.com/leap.jsp)
 
-## Submitting Incomplete Problems
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+## Submitting Incomplete Solutions
 
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.

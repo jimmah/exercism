@@ -1,20 +1,19 @@
 # Pangram
 
-Determine if a sentence is a pangram.
-
 Determine if a sentence is a pangram. A pangram (Greek: παν γράμμα, pan gramma,
 "every letter") is a sentence using every letter of the alphabet at least once.
-The best known English pangram is "The quick brown fox jumps over the lazy dog."
+The best known English pangram is:
+> The quick brown fox jumps over the lazy dog.
 
-The alphabet used is ASCII, and case insensitive, from 'a' to 'z'
-inclusively.
+The alphabet used consists of ASCII letters `a` to `z`, inclusive, and is case
+insensitive. Input will not contain non-ASCII symbols.
 
 ## Setup
 
-Go through the setup instructions for TypeScript to
-install the necessary dependencies:
+Go through the setup instructions for TypeScript to install the necessary
+dependencies:
 
-http://exercism.io/languages/typescript
+[https://exercism.io/tracks/typescript/installation](https://exercism.io/tracks/typescript/installation)
 
 ## Requirements
 
@@ -32,10 +31,16 @@ Execute the tests with:
 $ yarn test
 ```
 
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by changing `xit` to
+`it`.
+
 ## Source
 
 Wikipedia [https://en.wikipedia.org/wiki/Pangram](https://en.wikipedia.org/wiki/Pangram)
 
-## Submitting Incomplete Problems
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+## Submitting Incomplete Solutions
 
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.

@@ -1,5 +1,5 @@
 class RobotName {
-  private _name: string
+  private _name = ""
   private _names: Set<string> = new Set<string>()
 
   get name(): string {
@@ -10,7 +10,7 @@ class RobotName {
     this.resetName()
   }
 
-  resetName() {
+  resetName(): void {
     this._name = this.generateName()
   }
 

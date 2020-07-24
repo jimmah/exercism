@@ -1,8 +1,9 @@
-# Etl
+# ETL
 
 We are going to do the `Transform` step of an Extract-Transform-Load.
 
 ### ETL
+
 Extract-Transform-Load (ETL) is a fancy way of saying, "We have some crufty, legacy data over in this system, and now we need it in this shiny new system over here, so
 we're going to migrate this."
 
@@ -11,6 +12,7 @@ once." That's then typically followed by much forehead slapping and
 moaning about how stupid we could possibly be.)
 
 ### The goal
+
 We're going to extract some scrabble scores from a legacy system.
 
 The old system stored a list of letters per score:
@@ -46,10 +48,10 @@ game while being scored at 4 in the Hawaiian-language version.
 
 ## Setup
 
-Go through the setup instructions for TypeScript to
-install the necessary dependencies:
+Go through the setup instructions for TypeScript to install the necessary
+dependencies:
 
-http://exercism.io/languages/typescript
+[https://exercism.io/tracks/typescript/installation](https://exercism.io/tracks/typescript/installation)
 
 ## Requirements
 
@@ -67,10 +69,16 @@ Execute the tests with:
 $ yarn test
 ```
 
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by changing `xit` to
+`it`.
+
 ## Source
 
 The Jumpstart Lab team [http://jumpstartlab.com](http://jumpstartlab.com)
 
-## Submitting Incomplete Problems
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+## Submitting Incomplete Solutions
 
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.

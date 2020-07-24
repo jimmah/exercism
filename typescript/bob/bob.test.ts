@@ -14,8 +14,23 @@ describe('Bob', () => {
     expect(result).toEqual('Whoa, chill out!')
   })
 
+  it('shouting gibberish', () => {
+    const result = bob.hey('FCECDFCAAB')
+    expect(result).toEqual('Whoa, chill out!')
+  })
+
   it('asking a question', () => {
     const result = bob.hey('Does this cryogenic chamber make me look fat?')
+    expect(result).toEqual('Sure.')
+  })
+
+  it('asking a numeric question', () => {
+    const result = bob.hey('You are, what, like 15?')
+    expect(result).toEqual('Sure.')
+  })
+
+  it('asking gibberish', () => {
+    const result = bob.hey('fffbbcbeab?')
     expect(result).toEqual('Sure.')
   })
 
@@ -29,9 +44,9 @@ describe('Bob', () => {
     expect(result).toEqual('Whatever.')
   })
 
-  it('forceful questions', () => {
+  it('forceful question', () => {
     const result = bob.hey('WHAT THE HELL WERE YOU THINKING?')
-    expect(result).toEqual('Whoa, chill out!')
+    expect(result).toEqual('Calm down, I know what I\'m doing!')
   })
 
   it('shouting numbers', () => {
@@ -39,12 +54,12 @@ describe('Bob', () => {
     expect(result).toEqual('Whoa, chill out!')
   })
 
-  it('only numbers', () => {
+  it('no letters', () => {
     const result = bob.hey('1, 2, 3')
     expect(result).toEqual('Whatever.')
   })
 
-  it('question with only numbers', () => {
+  it('question with no letters', () => {
     const result = bob.hey('4?')
     expect(result).toEqual('Sure.')
   })
@@ -54,23 +69,13 @@ describe('Bob', () => {
     expect(result).toEqual('Whoa, chill out!')
   })
 
-  it('shouting with umlauts', () => {
-    const result = bob.hey('\xdcML\xc4\xdcTS!')
-    expect(result).toEqual('Whoa, chill out!')
-  })
-
-  it('calmly speaking about umlauts', () => {
-    const result = bob.hey('\xfcML\xe4\xdcTS')
-    expect(result).toEqual('Whatever.')
-  })
-
   it('shouting with no exclamation mark', () => {
-    const result = bob.hey('I HATE YOU')
+    const result = bob.hey('I HATE THE DMV')
     expect(result).toEqual('Whoa, chill out!')
   })
 
   it('statement containing question mark', () => {
-    const result = bob.hey('Ending with a ? means a question.')
+    const result = bob.hey('Ending with ? means a question.')
     expect(result).toEqual('Whatever.')
   })
 
@@ -87,6 +92,36 @@ describe('Bob', () => {
   it('prolonged silence', () => {
     const result = bob.hey('   ')
     expect(result).toEqual('Fine. Be that way!')
+  })
+
+  it('alternate silence', () => {
+    const result = bob.hey('\t\t\t\t\t\t\t\t\t\t')
+    expect(result).toEqual('Fine. Be that way!')
+  })
+
+  it('multiple line question', () => {
+    const result = bob.hey('\nDoes this cryogenic chamber make me look fat?\nNo.')
+    expect(result).toEqual('Whatever.')
+  })
+
+  it('starting with whitespace', () => {
+    const result = bob.hey('         hmmmmmmm...')
+    expect(result).toEqual('Whatever.')
+  })
+
+  it('ending with whitespace', () => {
+    const result = bob.hey('Okay if like my  spacebar  quite a bit?   ')
+    expect(result).toEqual('Sure.')
+  })
+
+  it('other whitespace', () => {
+    const result = bob.hey('\n\r \t')
+    expect(result).toEqual('Fine. Be that way!')
+  })
+
+  it('non-question ending with whitespace', () => {
+    const result = bob.hey('This is a statement ending with whitespace      ')
+    expect(result).toEqual('Whatever.')
   })
 
 })

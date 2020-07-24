@@ -1,3 +1,5 @@
+class ArgumentError {}
+
 class WordProblem {
   private _question: string
 
@@ -53,7 +55,5 @@ class WordProblem {
     return result
   }
 }
-
-class ArgumentError {}
 
 export {WordProblem, ArgumentError}

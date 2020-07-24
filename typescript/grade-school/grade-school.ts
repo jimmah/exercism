@@ -1,7 +1,7 @@
 class GradeSchool {
   private _students = new Map<number, Set<string>>()
 
-  addStudent(name: string, grade: number) {
+  addStudent(name: string, grade: number): void {
     const students = this._students.get(grade) || new Set<string>()
     students.add(name)
     this._students.set(grade, students)

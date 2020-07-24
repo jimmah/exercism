@@ -1,6 +1,7 @@
 # Grade School
 
-Given students' names along with the grade that they are in, create a roster for the school
+Given students' names along with the grade that they are in, create a roster
+for the school.
 
 In the end, you should be able to:
 
@@ -20,7 +21,6 @@ In the end, you should be able to:
 Note that all our students only have one name.  (It's a small town, what
 do you want?)
 
-
 ## For bonus points
 
 Did you get the tests passing and the code clean? If you want to, these
@@ -36,10 +36,10 @@ experiment make the code better? Worse? Did you learn anything from it?
 
 ## Setup
 
-Go through the setup instructions for TypeScript to
-install the necessary dependencies:
+Go through the setup instructions for TypeScript to install the necessary
+dependencies:
 
-http://exercism.io/languages/typescript
+[https://exercism.io/tracks/typescript/installation](https://exercism.io/tracks/typescript/installation)
 
 ## Requirements
 
@@ -57,10 +57,16 @@ Execute the tests with:
 $ yarn test
 ```
 
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by changing `xit` to
+`it`.
+
 ## Source
 
 A pairing session with Phil Battos at gSchool [http://gschool.it](http://gschool.it)
 
-## Submitting Incomplete Problems
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+## Submitting Incomplete Solutions
 
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.

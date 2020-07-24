@@ -11,7 +11,7 @@ class FoodChain {
   ]
 
   static verse(n: number): string {
-    let result: string = ""
+    let result = ""
 
     let index = n - 1
     result += `I know an old lady who swallowed a ${this._animals[index]}.\n`

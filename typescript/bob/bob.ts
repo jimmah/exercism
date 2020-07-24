@@ -1,5 +1,8 @@
 class Bob {
   hey(input: string): string {
+    if (this.isShouting(input) && this.isQuestion(input)) {
+      return "Calm down, I know what I'm doing!"
+    }
     if (this.isSilence(input)) {
       return "Fine. Be that way!"
     }
@@ -21,7 +24,7 @@ class Bob {
   }
 
   private isQuestion(input: string): boolean {
-    return input.endsWith("?")
+    return input.trim().endsWith("?")
   }
 
   private isShouting(input: string): boolean {

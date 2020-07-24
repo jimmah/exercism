@@ -1,0 +1,15 @@
+{
+  "name": "@exercism/typescript",
+  "version": "1.0.0",
+  "description": "Exercism exercises in Typescript.",
+  "author": "",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exercism/typescript"
+  },
+  "scripts": {
+    "preinstall": "node install.js"
+  },
+  "dependencies": {}
+}

@@ -12,16 +12,15 @@ which means that their name gets wiped. The next time you ask, it will
 respond with a new random name.
 
 The names must be random: they should not follow a predictable sequence.
-Random names means a risk of collisions. Your solution should not allow
-the use of the same name twice when avoidable. In some exercism language
-tracks there are tests to ensure that the same name is never used twice.
+Random names means a risk of collisions. Your solution must ensure that
+every existing robot has a unique name.
 
 ## Setup
 
-Go through the setup instructions for TypeScript to
-install the necessary dependencies:
+Go through the setup instructions for TypeScript to install the necessary
+dependencies:
 
-http://exercism.io/languages/typescript
+[https://exercism.io/tracks/typescript/installation](https://exercism.io/tracks/typescript/installation)
 
 ## Requirements
 
@@ -39,10 +38,16 @@ Execute the tests with:
 $ yarn test
 ```
 
+In the test suites all tests but the first have been skipped.
+
+Once you get a test passing, you can enable the next one by changing `xit` to
+`it`.
+
 ## Source
 
 A debugging session with Paul Blackwell at gSchool. [http://gschool.it](http://gschool.it)
 
-## Submitting Incomplete Problems
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+## Submitting Incomplete Solutions
 
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.
